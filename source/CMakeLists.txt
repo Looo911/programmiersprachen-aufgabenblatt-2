@@ -9,6 +9,8 @@ target_link_libraries(example
   m)
 add_dependencies(example glfw ${COPY_BINARY})
 
+add_executable(vektor vec2.cpp)
+
 # Build tests
 add_executable(tests
   tests.cpp)
