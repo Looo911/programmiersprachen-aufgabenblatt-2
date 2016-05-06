@@ -39,3 +39,29 @@ Vec2& Vec2::operator/=(float v)
 	return *this;
 }
 
+
+Vec2 operator +( Vec2 const & u , Vec2 const & v )
+{
+	return Vec2(u.x + v.x, u.y + v.y);
+}
+
+Vec2 operator -( Vec2 const & u , Vec2 const & v )
+{
+	return Vec2(u.x - v.x, u.y - v.y);
+}
+
+Vec2 operator *( Vec2 const & v , float s )
+{
+	return Vec2(v.x * s, v.y * s);
+}
+
+Vec2 operator /( Vec2 const & v , float s )
+{
+	return Vec2(v.x / s, v.y / s);
+}
+
+Vec2 operator *( float s , Vec2 const & v )
+{
+	return Vec2(v.x * s, v.y * s);
+}
+
