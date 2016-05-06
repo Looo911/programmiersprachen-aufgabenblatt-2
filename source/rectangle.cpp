@@ -21,3 +21,28 @@ rectangle::Rectangle(Vec2 const& p, float w, float h, Color const& clr):
     color_{clr}
     {}
 
+
+
+void Circle::radius(float r) 
+{radius_=r;}
+
+void Circle::center(Vec2 const& ctr) 
+{center_=ctr;}
+
+void Circle::color(Color const& clr)
+{color_=clr;}
+
+
+
+Vec2 Circle::center() const 
+{return center_;}
+
+float Circle::radius() const 
+{return radius_;}
+
+Color Circle::color() const 
+{return color_;} 
+
+
+
+float circumference() const
