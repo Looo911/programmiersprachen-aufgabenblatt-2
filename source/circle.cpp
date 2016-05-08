@@ -19,23 +19,23 @@ Circle::Circle(Vec2 const& ctr, float r, Color const& clr) :
 
 
 void Circle::radius(float r) 
-{ radius_=r; }
+{radius_=r;}
 
 void Circle::center(Vec2 const& ctr) 
-{ center_=ctr; }
+{center_=ctr;}
 
 void Circle::color(Color const& clr) 
-{ color_=clr; }
+{color_=clr;}
 
 
 Vec2 Circle::center() const 
-{ return center_; }
+{return center_;}
 
 float Circle::radius() const 
-{ return radius_; }
+{return radius_;}
 
 Color Circle::color() const 
-{ return color_; }
+{return color_;}
 
 
 float circumference() const

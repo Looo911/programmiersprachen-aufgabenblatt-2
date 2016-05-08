@@ -1,6 +1,6 @@
 #define CIRCLE_HPP
 #ifndef RECTANGLE_HPP
-
+#include "color.hpp"
 #include "vec2.hpp"
 
 

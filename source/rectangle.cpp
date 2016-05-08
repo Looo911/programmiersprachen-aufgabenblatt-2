@@ -3,7 +3,6 @@
 #include "vec2.hpp"
 #include <cmath>
 #include <math.h>
-#include "window.hpp"
 #include "color.hpp"
 
 

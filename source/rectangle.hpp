@@ -1,4 +1,5 @@
 #define RECTANGLE_HPP
+#ifndef RECTANGLE_HPP
 
 #include "vec2.hpp"
 
@@ -8,6 +9,8 @@ class Rectangle
   public:
     Rectangle();
     Rectangle(Vec2 const& p, float w, float h, Color const& clr);
+
+    float circumference() const;
 
 
    //set 
@@ -28,4 +31,5 @@ class Rectangle
     float height_;
     Color color_;
 };
+
 #endif
