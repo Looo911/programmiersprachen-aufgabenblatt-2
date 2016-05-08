@@ -36,3 +36,9 @@ float Circle::radius() const
 
 Color Circle::color() const 
 { return color_; }
+
+
+float circumference() const
+{
+	return((2*radius()*M_PI));
+}

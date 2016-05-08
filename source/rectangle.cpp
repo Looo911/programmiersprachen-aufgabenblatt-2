@@ -23,26 +23,39 @@ rectangle::Rectangle(Vec2 const& p, float w, float h, Color const& clr):
 
 
 
-void Circle::radius(float r) 
-{radius_=r;}
+void Rectangle::point(Vec2 const& pnt)
+{point_=pnt;}
 
-void Circle::center(Vec2 const& ctr) 
-{center_=ctr;}
+void Rectangle::width(float wdth) 
+{width_=wdth;}
 
-void Circle::color(Color const& clr)
+void Rectangle::height(float hght) 
+{height_=hght;}
+
+void Rectangle::color(Color const& clr) 
 {color_=clr;}
 
 
 
-Vec2 Circle::center() const 
-{return center_;}
+Vec2 Rectangle::point() const 
+{return point_;}
 
-float Circle::radius() const 
-{return radius_;}
+float Rectangle::width() const 
+{return width_;}
 
-Color Circle::color() const 
-{return color_;} 
+float Rectangle::height() const 
+{return height_;}
+
+Color Rectangle::color() const 
+{return color_;}
 
 
 
-float circumference() const
+
+float Rectangle::circumference() const
+{
+    return( fabs(2*height())+fabs(2*width()));          //fabs, da sonst negative und pos. Werte addiert werden könnten.
+}
+
+
+
