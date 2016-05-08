@@ -1,0 +1,9 @@
+2.7
+
+Der einzige Unterschied zwischen struct und class ist, dass bei struct die Default-Sichtbarkeit public ist und bei class ist sie private.
+
+Von daher ist es völlig irrelevant, was man verwendet.
+
+Viele Leute verwenden struct tendenziell eher für
+a) Klassen ohne Memberfunktionen, die reine Datensammlungen sind
+b) kleine, fast triviale Klassen 

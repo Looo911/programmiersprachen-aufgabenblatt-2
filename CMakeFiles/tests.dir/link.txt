@@ -1,0 +1,1 @@
+/usr/bin/c++      CMakeFiles/tests.dir/vec2.o CMakeFiles/tests.dir/mat2.o CMakeFiles/tests.dir/circle.o CMakeFiles/tests.dir/rectangle.o CMakeFiles/tests.dir/window.o CMakeFiles/tests.dir/glew.o CMakeFiles/tests.dir/tests.o  -o tests -rdynamic -lglfw 

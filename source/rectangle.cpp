@@ -4,6 +4,8 @@
 #include <cmath>
 #include <math.h>
 #include "color.hpp"
+#include "window.hpp"
+
 
 
 Rectangle::Rectangle():
@@ -13,7 +15,7 @@ Rectangle::Rectangle():
     color_{0.0,0.0,0.0}
     {}
 
-rectangle::Rectangle(Vec2 const& p, float w, float h, Color const& clr):
+Rectangle::Rectangle(Vec2 const& p, float w, float h, Color const& clr):
 	point_{p},
     width_{w},
     height_{h},
@@ -53,7 +55,37 @@ Color Rectangle::color() const
 
 float Rectangle::circumference() const
 {
-    return( fabs(2*height())+fabs(2*width()));          //fabs, da sonst negative und pos. Werte addiert werden könnten.
+    return( fabs(2*Rectangle::height())+fabs(2*width()));          //fabs, da sonst negative und pos. Werte addiert werden könnten.
+}
+
+
+
+void Rectangle::draw(Window const& wndw, Color const& clr) const
+{
+    // Rechte Linie
+    wndw.draw_line(point().x, point().y, point().x, point().y+height(), clr.r, clr.g, clr.b);
+
+    // Obere Linie
+    wndw.draw_line(point().x, point().y+height(), point().x+width(), point().y+height(), clr.r, clr.g, clr.b);
+
+    //Untere Linie
+    wndw.draw_line(point().x, point().y, point().x+width(), point().y, clr.r, clr.g, clr.b);
+
+    //Linke Linie
+    wndw.draw_line(point().x+width(), point().y, point().x+width(), point().y+height(), clr.r, clr.g, clr.b);
+}
+
+
+
+bool Rectangle::is_inside(Vec2 const& mp)
+{
+    if (mp.x >= point().x+width() || mp.x <= point().x
+        || mp.y >= point().y+height() || mp.y <= point().y)
+    {
+        return false;
+    }
+
+    return true;
 }
 
 

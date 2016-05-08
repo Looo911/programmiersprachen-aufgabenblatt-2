@@ -1,0 +1,1 @@
+/usr/bin/c++      CMakeFiles/timeless.dir/window.o CMakeFiles/timeless.dir/glew.o CMakeFiles/timeless.dir/mat2.o CMakeFiles/timeless.dir/circle.o CMakeFiles/timeless.dir/rectangle.o  -o timeless -rdynamic -lglfw -lm 

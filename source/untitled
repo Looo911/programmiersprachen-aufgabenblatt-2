@@ -1,11 +1,7 @@
-#ifndef RECTANGLE_HPP
 #define RECTANGLE_HPP
+#ifndef RECTANGLE_HPP
 
-
-#include "mat2.hpp"
 #include "vec2.hpp"
-#include "window.hpp"
-#include "color.hpp"
 
 
 class Rectangle 
@@ -15,8 +11,6 @@ class Rectangle
     Rectangle(Vec2 const& p, float w, float h, Color const& clr);
 
     float circumference() const;
-    void draw(Window const& wndw, Color const& clr) const; 
-    bool is_inside(Vec2 const& mp);
 
 
    //set 

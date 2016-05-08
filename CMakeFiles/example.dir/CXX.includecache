@@ -1,0 +1,98 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/lo/Dropbox/2. Semester/Programmiersprachen/Übung/programmiersprachen-aufgabenblatt-2/source/circle.cpp
+circle.hpp
+/home/lo/Dropbox/2. Semester/Programmiersprachen/Übung/programmiersprachen-aufgabenblatt-2/source/circle.hpp
+vec2.hpp
+/home/lo/Dropbox/2. Semester/Programmiersprachen/Übung/programmiersprachen-aufgabenblatt-2/source/vec2.hpp
+cmath
+-
+window.hpp
+/home/lo/Dropbox/2. Semester/Programmiersprachen/Übung/programmiersprachen-aufgabenblatt-2/source/window.hpp
+
+/home/lo/Dropbox/2. Semester/Programmiersprachen/Übung/programmiersprachen-aufgabenblatt-2/source/circle.hpp
+color.hpp
+/home/lo/Dropbox/2. Semester/Programmiersprachen/Übung/programmiersprachen-aufgabenblatt-2/source/color.hpp
+vec2.hpp
+/home/lo/Dropbox/2. Semester/Programmiersprachen/Übung/programmiersprachen-aufgabenblatt-2/source/vec2.hpp
+
+/home/lo/Dropbox/2. Semester/Programmiersprachen/Übung/programmiersprachen-aufgabenblatt-2/source/color.hpp
+
+/home/lo/Dropbox/2. Semester/Programmiersprachen/Übung/programmiersprachen-aufgabenblatt-2/source/example.cpp
+window.hpp
+/home/lo/Dropbox/2. Semester/Programmiersprachen/Übung/programmiersprachen-aufgabenblatt-2/source/window.hpp
+utility
+-
+cmath
+-
+
+/home/lo/Dropbox/2. Semester/Programmiersprachen/Übung/programmiersprachen-aufgabenblatt-2/source/mat2.cpp
+iostream
+-
+cmath
+-
+mat2.hpp
+/home/lo/Dropbox/2. Semester/Programmiersprachen/Übung/programmiersprachen-aufgabenblatt-2/source/mat2.hpp
+vec2.hpp
+/home/lo/Dropbox/2. Semester/Programmiersprachen/Übung/programmiersprachen-aufgabenblatt-2/source/vec2.hpp
+
+/home/lo/Dropbox/2. Semester/Programmiersprachen/Übung/programmiersprachen-aufgabenblatt-2/source/mat2.hpp
+vec2.hpp
+/home/lo/Dropbox/2. Semester/Programmiersprachen/Übung/programmiersprachen-aufgabenblatt-2/source/vec2.hpp
+
+/home/lo/Dropbox/2. Semester/Programmiersprachen/Übung/programmiersprachen-aufgabenblatt-2/source/rectangle.cpp
+rectangle.hpp
+/home/lo/Dropbox/2. Semester/Programmiersprachen/Übung/programmiersprachen-aufgabenblatt-2/source/rectangle.hpp
+mat2.hpp
+/home/lo/Dropbox/2. Semester/Programmiersprachen/Übung/programmiersprachen-aufgabenblatt-2/source/mat2.hpp
+vec2.hpp
+/home/lo/Dropbox/2. Semester/Programmiersprachen/Übung/programmiersprachen-aufgabenblatt-2/source/vec2.hpp
+cmath
+-
+math.h
+-
+color.hpp
+/home/lo/Dropbox/2. Semester/Programmiersprachen/Übung/programmiersprachen-aufgabenblatt-2/source/color.hpp
+
+/home/lo/Dropbox/2. Semester/Programmiersprachen/Übung/programmiersprachen-aufgabenblatt-2/source/rectangle.hpp
+vec2.hpp
+/home/lo/Dropbox/2. Semester/Programmiersprachen/Übung/programmiersprachen-aufgabenblatt-2/source/vec2.hpp
+
+/home/lo/Dropbox/2. Semester/Programmiersprachen/Übung/programmiersprachen-aufgabenblatt-2/source/vec2.cpp
+iostream
+-
+vec2.hpp
+/home/lo/Dropbox/2. Semester/Programmiersprachen/Übung/programmiersprachen-aufgabenblatt-2/source/vec2.hpp
+
+/home/lo/Dropbox/2. Semester/Programmiersprachen/Übung/programmiersprachen-aufgabenblatt-2/source/vec2.hpp
+
+/home/lo/Dropbox/2. Semester/Programmiersprachen/Übung/programmiersprachen-aufgabenblatt-2/source/window.cpp
+window.hpp
+/home/lo/Dropbox/2. Semester/Programmiersprachen/Übung/programmiersprachen-aufgabenblatt-2/source/window.hpp
+utility
+-
+cstring
+-
+iostream
+-
+cassert
+-
+
+/home/lo/Dropbox/2. Semester/Programmiersprachen/Übung/programmiersprachen-aufgabenblatt-2/source/window.hpp
+GL/glew.h
+-
+GLFW/glfw3.h
+-
+utility
+-
+array
+-
+string
+-
+
