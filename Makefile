@@ -127,22 +127,38 @@ tests/fast:
 	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/build
 .PHONY : tests/fast
 
+#=============================================================================
+# Target rules for targets named time
+
+# Build rule for target.
+time: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 time
+.PHONY : time
+
+# fast build rule for target.
+time/fast:
+	$(MAKE) -f CMakeFiles/time.dir/build.make CMakeFiles/time.dir/build
+.PHONY : time/fast
+
 # target to build an object file
 circle.o:
 	$(MAKE) -f CMakeFiles/example.dir/build.make CMakeFiles/example.dir/circle.o
 	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/circle.o
+	$(MAKE) -f CMakeFiles/time.dir/build.make CMakeFiles/time.dir/circle.o
 .PHONY : circle.o
 
 # target to preprocess a source file
 circle.i:
 	$(MAKE) -f CMakeFiles/example.dir/build.make CMakeFiles/example.dir/circle.i
 	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/circle.i
+	$(MAKE) -f CMakeFiles/time.dir/build.make CMakeFiles/time.dir/circle.i
 .PHONY : circle.i
 
 # target to generate assembly for a file
 circle.s:
 	$(MAKE) -f CMakeFiles/example.dir/build.make CMakeFiles/example.dir/circle.s
 	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/circle.s
+	$(MAKE) -f CMakeFiles/time.dir/build.make CMakeFiles/time.dir/circle.s
 .PHONY : circle.s
 
 # target to build an object file
@@ -164,54 +180,63 @@ example.s:
 glew.o:
 	$(MAKE) -f CMakeFiles/example.dir/build.make CMakeFiles/example.dir/glew.o
 	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/glew.o
+	$(MAKE) -f CMakeFiles/time.dir/build.make CMakeFiles/time.dir/glew.o
 .PHONY : glew.o
 
 # target to preprocess a source file
 glew.i:
 	$(MAKE) -f CMakeFiles/example.dir/build.make CMakeFiles/example.dir/glew.i
 	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/glew.i
+	$(MAKE) -f CMakeFiles/time.dir/build.make CMakeFiles/time.dir/glew.i
 .PHONY : glew.i
 
 # target to generate assembly for a file
 glew.s:
 	$(MAKE) -f CMakeFiles/example.dir/build.make CMakeFiles/example.dir/glew.s
 	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/glew.s
+	$(MAKE) -f CMakeFiles/time.dir/build.make CMakeFiles/time.dir/glew.s
 .PHONY : glew.s
 
 # target to build an object file
 mat2.o:
 	$(MAKE) -f CMakeFiles/example.dir/build.make CMakeFiles/example.dir/mat2.o
 	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/mat2.o
+	$(MAKE) -f CMakeFiles/time.dir/build.make CMakeFiles/time.dir/mat2.o
 .PHONY : mat2.o
 
 # target to preprocess a source file
 mat2.i:
 	$(MAKE) -f CMakeFiles/example.dir/build.make CMakeFiles/example.dir/mat2.i
 	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/mat2.i
+	$(MAKE) -f CMakeFiles/time.dir/build.make CMakeFiles/time.dir/mat2.i
 .PHONY : mat2.i
 
 # target to generate assembly for a file
 mat2.s:
 	$(MAKE) -f CMakeFiles/example.dir/build.make CMakeFiles/example.dir/mat2.s
 	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/mat2.s
+	$(MAKE) -f CMakeFiles/time.dir/build.make CMakeFiles/time.dir/mat2.s
 .PHONY : mat2.s
 
 # target to build an object file
 rectangle.o:
 	$(MAKE) -f CMakeFiles/example.dir/build.make CMakeFiles/example.dir/rectangle.o
 	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/rectangle.o
+	$(MAKE) -f CMakeFiles/time.dir/build.make CMakeFiles/time.dir/rectangle.o
 .PHONY : rectangle.o
 
 # target to preprocess a source file
 rectangle.i:
 	$(MAKE) -f CMakeFiles/example.dir/build.make CMakeFiles/example.dir/rectangle.i
 	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/rectangle.i
+	$(MAKE) -f CMakeFiles/time.dir/build.make CMakeFiles/time.dir/rectangle.i
 .PHONY : rectangle.i
 
 # target to generate assembly for a file
 rectangle.s:
 	$(MAKE) -f CMakeFiles/example.dir/build.make CMakeFiles/example.dir/rectangle.s
 	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/rectangle.s
+	$(MAKE) -f CMakeFiles/time.dir/build.make CMakeFiles/time.dir/rectangle.s
 .PHONY : rectangle.s
 
 # target to build an object file
@@ -230,39 +255,60 @@ tests.s:
 .PHONY : tests.s
 
 # target to build an object file
+time.o:
+	$(MAKE) -f CMakeFiles/time.dir/build.make CMakeFiles/time.dir/time.o
+.PHONY : time.o
+
+# target to preprocess a source file
+time.i:
+	$(MAKE) -f CMakeFiles/time.dir/build.make CMakeFiles/time.dir/time.i
+.PHONY : time.i
+
+# target to generate assembly for a file
+time.s:
+	$(MAKE) -f CMakeFiles/time.dir/build.make CMakeFiles/time.dir/time.s
+.PHONY : time.s
+
+# target to build an object file
 vec2.o:
 	$(MAKE) -f CMakeFiles/example.dir/build.make CMakeFiles/example.dir/vec2.o
 	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/vec2.o
+	$(MAKE) -f CMakeFiles/time.dir/build.make CMakeFiles/time.dir/vec2.o
 .PHONY : vec2.o
 
 # target to preprocess a source file
 vec2.i:
 	$(MAKE) -f CMakeFiles/example.dir/build.make CMakeFiles/example.dir/vec2.i
 	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/vec2.i
+	$(MAKE) -f CMakeFiles/time.dir/build.make CMakeFiles/time.dir/vec2.i
 .PHONY : vec2.i
 
 # target to generate assembly for a file
 vec2.s:
 	$(MAKE) -f CMakeFiles/example.dir/build.make CMakeFiles/example.dir/vec2.s
 	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/vec2.s
+	$(MAKE) -f CMakeFiles/time.dir/build.make CMakeFiles/time.dir/vec2.s
 .PHONY : vec2.s
 
 # target to build an object file
 window.o:
 	$(MAKE) -f CMakeFiles/example.dir/build.make CMakeFiles/example.dir/window.o
 	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/window.o
+	$(MAKE) -f CMakeFiles/time.dir/build.make CMakeFiles/time.dir/window.o
 .PHONY : window.o
 
 # target to preprocess a source file
 window.i:
 	$(MAKE) -f CMakeFiles/example.dir/build.make CMakeFiles/example.dir/window.i
 	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/window.i
+	$(MAKE) -f CMakeFiles/time.dir/build.make CMakeFiles/time.dir/window.i
 .PHONY : window.i
 
 # target to generate assembly for a file
 window.s:
 	$(MAKE) -f CMakeFiles/example.dir/build.make CMakeFiles/example.dir/window.s
 	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/window.s
+	$(MAKE) -f CMakeFiles/time.dir/build.make CMakeFiles/time.dir/window.s
 .PHONY : window.s
 
 # Help Target
@@ -271,6 +317,7 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
+	@echo "... time"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... example"
@@ -293,6 +340,9 @@ help:
 	@echo "... tests.o"
 	@echo "... tests.i"
 	@echo "... tests.s"
+	@echo "... time.o"
+	@echo "... time.i"
+	@echo "... time.s"
 	@echo "... vec2.o"
 	@echo "... vec2.i"
 	@echo "... vec2.s"

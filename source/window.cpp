@@ -41,7 +41,7 @@ Window::Window(std::pair<int, int> const& windowsize)
 
     glLineWidth(2.0f);
     glEnable(GL_LINE_SMOOTH);
-    glClearColor(0.0f,0.0f,0.0f,0.0f);
+    glClearColor(1.0f,1.0f,1.0f,1.0f);
   }
 }
 

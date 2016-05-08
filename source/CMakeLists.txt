@@ -16,6 +16,23 @@ target_link_libraries(example
   m)
 add_dependencies(example glfw ${COPY_BINARY})
 
+# Build example
+add_executable(time
+  window.cpp
+  glew.c
+  vec2.cpp
+  mat2.cpp
+  circle.cpp
+  rectangle.cpp
+  time.cpp
+	)
+  
+target_link_libraries(time
+  glfw
+  ${GLFW_LIBRARIES}
+  m)
+add_dependencies(time glfw ${COPY_BINARY})
+
 
 # Build tests
 add_executable(tests

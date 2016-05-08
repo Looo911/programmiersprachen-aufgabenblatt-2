@@ -1,2 +1,3 @@
+/home/lo/Dropbox/2. Semester/Programmiersprachen/Übung/programmiersprachen-aufgabenblatt-2/CMakeFiles/time.dir
 /home/lo/Dropbox/2. Semester/Programmiersprachen/Übung/programmiersprachen-aufgabenblatt-2/CMakeFiles/example.dir
 /home/lo/Dropbox/2. Semester/Programmiersprachen/Übung/programmiersprachen-aufgabenblatt-2/CMakeFiles/tests.dir
