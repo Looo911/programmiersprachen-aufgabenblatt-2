@@ -56,6 +56,11 @@ Mat2 operator*(float v,Mat2 const& u)
 	return(Mat2((u.a*v),(u.b*v),(u.c*v),(u.d*v)));
 }
 
+Mat2 operator*(Mat2 const& m1, Mat2 const& m2)
+{
+    return Mat2((m1.a*m2.a+m1.b*m2.c),(m1.a*m2.b+m1.b*m2.d),
+    			(m1.c*m2.a+m1.d*m2.c),(m1.c*m2.b+m1.d*m2.d)); 
+}
 
 Mat2 inverse (Mat2 const & m )
 {

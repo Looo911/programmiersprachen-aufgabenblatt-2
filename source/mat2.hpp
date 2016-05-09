@@ -21,11 +21,16 @@ public:
 	float b;
 	float c;
 	float d;
+	bool operator ==(const Mat2& m){return ((a == m.a) &&(b == m.b)
+                                        &&  (c == m.c) &&(d == m.d));}
 };
+
+Mat2 operator*(Mat2 const& m1, Mat2 const& m2);
 
 Vec2 operator*(Mat2 const & m , Vec2 const & v);
 Mat2 inverse (Mat2 const & m );
 Mat2 transpose (Mat2 const & m );
 Mat2 make_rotation_mat2(float phi);
+
 
 #endif
